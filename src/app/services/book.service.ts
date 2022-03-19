@@ -9,10 +9,10 @@ export class BookService {
   book: book[];
   constructor() {
     this.book = [
-    {titulo: "rene",
-    autor: "jalvin",
+    {titulo: "los 100",
+    autor: "carlos",
     isbn: "23",
-    paginas: "23", 
+    paginas: "300", 
     editorial: "semana", 
     fecha_publicacion: "23/12/12", 
     fecha_de_registro: "12/12/2020"}];
