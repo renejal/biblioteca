@@ -24,4 +24,12 @@ export class BookService {
   addTask(books: book){
     this.book.push(books)
   }
+  deleteBook(task: book) {
+    for (let i = 0; i < this.book.length; i++) {
+      if (task == this.book[i]) {
+        this.book.splice(i, 1);
+        localStorage.setItem('tasks', JSON.stringify(this.book));
+      }
+    }
+  }
 }
