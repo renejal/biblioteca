@@ -1,1 +1,28 @@
-<p>book-form works!</p>
+<div class="card">
+    <div class="card-body">
+      <!-- FORM TO ADD TASKS -->
+      <form (submit)="addTask(titulo, autor, isbn, paginas, editorial, fecha_publicacion, fecha_de_registro)">
+        <div class="form-group">
+          <input type="text" placeholder="Tiulo" #titulo class="form-control">
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Autor" #autor class="form-control">
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="ISBN" #isbn class="form-control"> </div>
+        <div class="form-group">
+          <input type="text" placeholder="Paginas" #paginas class="form-control">
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Editorial" #editorial class="form-control">
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Fecha de publicacion" #fecha_publicacion class="form-control">
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Fecha de registro" #fecha_de_registro class="form-control">
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Send</button>
+      </form>
+    </div>
+  </div>
